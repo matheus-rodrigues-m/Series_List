@@ -1,0 +1,286 @@
+
+@font-face {
+    font-family: BebasNeue;
+    src: url(/assets/BebasNeue.otf);
+    font-weight: lighter;
+}
+
+body {
+    background-color: #f6f6f6;
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: BebasNeue;
+}
+
+/* CABEÇALHO */
+header {
+    background-color: #ED2B46;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-between;
+
+    padding: 0.5% 5%;
+}
+
+header img {
+    box-sizing: border-box;
+    width: 20%;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 10%;
+    /* background-color: white; */
+}
+
+.empty {
+    width: 10%;
+    /* background-color: blue; */
+}
+
+.icon {
+    width: 25%;
+    color: blue;
+
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.icon:hover {
+    /* transform: scale(1.2) */
+    transform: rotate(90deg);
+}
+
+.icon:nth-child(2):hover {
+  /* transform: scale(1.2) */
+  transform: rotate(72deg);
+}
+
+/* FILTROS */
+
+.searchField {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+
+    width: 90%;
+    margin-top: 4%;
+}
+
+.search-bar {
+    border: solid 2px #34364B;
+    width: 40%;
+    height: 2.5rem;    
+    border-radius: 10px;
+    background-color: #ededed;
+
+    /* font-size: clamp(0.8rem, 1rem, 1.2rem); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: all .2s;
+}
+
+.search-bar input {
+    background: transparent;
+    /* width: 100%; */
+    flex: 1;
+    border: none;
+    outline: none;
+    height: 100%;
+
+    font-size: clamp(1rem, 1.2rem, 1.5rem);	
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.search-bar button img {
+  width: 50%;
+
+  transition: all .2s;
+}
+
+.search-bar button:hover > img {
+    transform: scale(1.1);
+}
+
+.search-bar button {
+    background: transparent;
+    border: none;
+    /* background-color: red; */
+    width: 10%;
+    cursor: pointer;
+}
+
+.filters {
+    margin-left: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color:#ED2B46; */
+
+    width: 30%;
+    font-size: clamp(1rem, 1.2rem, 1.3rem);
+}
+
+.dropdown {
+  /* background-color: #34364B; */
+  width: 40%;
+}
+
+.select {
+  background: #ededed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6em 0.8em;
+  cursor: pointer;
+  color: #34364B;
+  font-weight: lighter;
+  width: 100%;
+  border-radius: 8px;
+  transition: all .2s ease-in-out;
+}
+
+.select:hover {
+  background-color: #f3f3f3;
+}
+
+.select-clicked {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+
+}
+
+.dropdown-icon {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #34364B;
+  transition: .3s;
+}
+
+.dropdown-icon-rotate {
+  transform: rotate(180deg);
+}
+
+.menu {
+  list-style: none;
+  padding: 0.2em 0.8em;
+  background-color: #ededed;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  font-weight: lighter;
+  position: absolute;
+  top: 9em;
+  width: 10.8%;
+  opacity: 0;
+  display: none;
+  transition: all.2s ease-in-out;
+}
+
+.menu li {
+  padding: 0.7em 0.8em;
+  margin: 0.3em 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.menu li:hover {
+  background-color: #e3e3e3;
+}
+
+.active {
+  background: #dedede;
+}
+
+.menu-open {
+  display: block;
+  opacity: 1;
+}
+
+
+/* CARD LIST */
+
+.mediaCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+
+.card {
+  background-color: #f6f6f6;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  padding: 0 0%;
+  
+  width: 16%;
+  border-radius: 25px;
+  margin-top: 5%;
+  overflow: hidden;
+}
+
+.card .img {
+  width: 100%;
+  height: 10rem;
+  background-color: red;
+}
+
+.img img {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.description {
+  padding: 0% 8% 0% 8%;
+}
+
+.description p {
+  font-size: clamp(0.6rem, 0.7rem, 0.8rem);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+
+.description h4 {
+  font-weight: lighter;
+  margin: 8% 0% 3% 0%;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0% 8% 0% 8%;
+}
+
+.bottom img {
+  width: 8%
+}
+
+.bottom p {
+  font-weight: lighter;
+  margin:  8% 0% 8% 0%;
+}

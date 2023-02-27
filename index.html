@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Series List</title>
+  </head>
+  <body>
+    <header>
+      <div class="empty"></div>
+
+      <img src="./assets/Logo.png" alt="Logo Series List" />
+
+      <div class="actions">
+        <img class="icon" src="./assets/Ativo 1.svg" alt="add" />
+        <img class="icon" src="./assets/Ativo 2.svg" alt="favorite" />
+      </div>
+    </header>
+
+    <div class="searchField">
+      <form action="" class="search-bar">
+        <input
+          class="search"
+          type="text"
+          value=""
+          placeholder="Search your serie or movie"
+        />
+        <button type="submit"><img src="assets/Ativo 6.svg" alt="" /></button>
+      </form>
+
+      <div class="filters">
+        <div class="dropdown">
+          <div class="select">
+            <span class="selected">ORDER BY</span>
+            <div class="dropdown-icon"></div>
+          </div>
+          <ul class="menu">
+            <li class="active">ORDER BY</li>
+            <li>ALPHABETICAL</li>
+            <li>OLDER</li>
+            <li>NEWEST</li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <div class="select">
+            <span class="selected">CATEGORIES</span>
+            <div class="dropdown-icon"></div>
+          </div>
+          <ul class="menu">
+            <li class="active">CATEGORIES</li>
+            <li>SERIES</li>
+            <li>MOVIES</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="mediaCards">
+      <div class="card">
+        <div class="img">
+          <img src="./assets/DaredevilTeaserPoster.jpg" alt="" />
+        </div>
+
+        <div class="description">
+          <h4>Daredevil [2022]</h4>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt
+          </p>
+        </div>
+
+        <div class="bottom">
+          <p>10 ep. em 1 Temporada</p>
+
+          <img src="./assets/Ativo 5.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/main.js" defer></script>
+  </body>
+</html>
